@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex flex-grow-1 justify-content-around flex-wrap w-full mb-5 ">
+    {% for photo in photos %}
+    <a href="{% url 'details' id=photo %}" style="text-decoration: none;color:black">
+<div class="d-flex flex-column  bg-info m-2 p-1 rounded text-black" style="width:280px">
+<p>Photo title</p>
+<p>{{photo}}</p>
+</div>
+</a>
+{% endfor %}
+</div>
+{%endblock%}
