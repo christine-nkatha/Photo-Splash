@@ -20,8 +20,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('',views.index,name = 'welcome'),
+    path('',views.index,name = 'home'),
     path('image/<int:id>/',views.image_details,name = 'details'),
+    path('categories/<str:category>/',views.view_category,name = 'categories'),
+    path('locations/<str:location>/',views.view_location,name = 'locations'),
+    path('search/',views.search_photo,name = 'search'),
+
     path('admin/', admin.site.urls),
    
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
