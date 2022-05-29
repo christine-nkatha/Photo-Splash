@@ -5,7 +5,7 @@
     {% for photo in photos %}
     <a href="{% url 'details' id=photo.id %}" class="d-flex rounded-lg shadow-lg" style="text-decoration: none;color:black;background-color: white; height: 530px;">
 <div class="d-flex flex-column  m-2 p-1  text-black " style="width:380px;height:520px;">
-    <img src="{{MEDIA_URL}}{{ photo.file }}" alt="photo not found" class="rounded" />
+    <img src="{{MEDIA_URL}}{{ photo.file }}" alt="photo not found" class="rounded" style="height:380px;height:280px;"/>
 <p class="text-center text-success  fs-1 fw-bold" style="font-size: 23px;font-weight: 700;">{{photo.name}}</p>
 <div class="d-flex justify-content-between ">
     <p style="font-size: 18px;">Category</p>
