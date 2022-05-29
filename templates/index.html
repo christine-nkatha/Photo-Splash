@@ -1,13 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="d-flex flex-grow-1 justify-content-around flex-wrap w-full mb-5 ">
+<div class="d-flex flex-grow-1 justify-content-around flex-wrap w-100 m-2 mb-5 ">
     {% for photo in photos %}
-    <a href="{% url 'details' id=photo %}" style="text-decoration: none;color:black">
-<div class="d-flex flex-column  bg-info m-2 p-1 rounded text-black" style="width:280px">
-<p>Photo title</p>
-<p>{{photo}}</p>
+    <a href="{% url 'details' id=photo.id %}" class="d-flex rounded-lg shadow-lg" style="text-decoration: none;color:black;background-color: white; height: 530px;">
+<div class="d-flex flex-column  m-2 p-1  text-black " style="width:380px;height:520px;">
+    <img src="{{MEDIA_URL}}{{ photo.file }}" alt="photo not found" class="rounded" />
+<p class="text-center text-success  fs-1 fw-bold" style="font-size: 23px;font-weight: 700;">{{photo.name}}</p>
+<div class="d-flex justify-content-between ">
+    <p style="font-size: 18px;">Category</p>
+    <p  style="font-size: 18px; font-weight: 700; ">{{photo.category}}</p></div>
+
+    <div class="d-flex justify-content-between ">
+        <p style="font-size: 18px;">Location</p>
+        <p  style="font-size: 18px; font-weight: 700; ">{{photo.location}}</p></div>
+<p style="font-size: 18px; padding: 5px;">{{photo.description}}</p>
+<div class="d-flex justify-content-end p-1">
+ 
+   <button class="btn btn-success">View Details</button>
+
+
 </div>
+</div>
+
 </a>
 {% endfor %}
 </div>

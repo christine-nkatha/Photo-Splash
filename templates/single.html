@@ -1,4 +1,8 @@
+{% extends "base.html" %}
 
-<div>
-    hello there from  image details 
+{% block content %}
+<div class="d-flex flex-grow-1 justify-content-around flex-wrap w-100 m-2 mb-5 ">
+    <img src="{{MEDIA_URL}}{{ photo.file }}" alt="photo not found" class="rounded w-75" />
+
 </div>
+{%endblock%}

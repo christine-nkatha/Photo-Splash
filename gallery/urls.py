@@ -24,4 +24,4 @@ urlpatterns = [
     path('image/<int:id>/',views.image_details,name = 'details'),
     path('admin/', admin.site.urls),
    
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
