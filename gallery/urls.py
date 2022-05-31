@@ -18,7 +18,7 @@ from django.urls import path,include
 from mygallery import views
 from django.conf import settings
 from django.conf.urls.static import static
-
+#updated path
 urlpatterns = [
     path('',views.index,name = 'home'),
     path('image/<int:id>/',views.image_details,name = 'details'),
