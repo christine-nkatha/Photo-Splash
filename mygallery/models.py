@@ -1,6 +1,6 @@
 from django.db import models
 
-
+#models
 class LocationModel(models.Model):
     name = models.CharField(max_length=100) 
 
