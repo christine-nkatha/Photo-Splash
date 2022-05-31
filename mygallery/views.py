@@ -37,3 +37,5 @@ def search_photo(request):
     photos =   ImageModel.objects.filter(name__icontains=text,description__icontains=text,)
   
     return  render(request,'location.html', {"photos":photos})
+
+    #this is for view purposes
