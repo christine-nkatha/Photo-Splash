@@ -7,7 +7,7 @@ db.sqlite3
 media
 media/media
 djangoenv/
-# Backup files # 
+# Backup files  here# 
 *.bak 
 
 # If you are using PyCharm # 
