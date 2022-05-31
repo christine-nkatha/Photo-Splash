@@ -61,3 +61,15 @@ No known bugs so far. If found drop me an email.
 - Christine Nkatha
 ## Contact Information
 nkathachristine456@gmail.com | christine.nkatha@student.moringaschool.com
+
+
+
+## LICENCE
+Welcome to Parrot GNU/Linux
+
+
+Copyright 2013-2020 Lorenzo Faletra <palinuro@parrotsec.org>
+Copyright 2020-2021 Parrot Security CIC  <director@parrotsec.org>
+
+Parrot GNU/Linux is released under GNU GPL (v3) except
+where another license is explicitly declared.
