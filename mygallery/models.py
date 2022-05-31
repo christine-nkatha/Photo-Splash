@@ -39,3 +39,5 @@ class ImageModel(models.Model):
     def filter_by_location(location):
         pass
 
+
+# for controls on django admin
