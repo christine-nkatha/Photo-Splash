@@ -22,7 +22,7 @@ if __name__ == '__main__':
     main()
 
 
-# djangoadmin :
+
 # super user details 
 # name -- christine
 # password --  1234
