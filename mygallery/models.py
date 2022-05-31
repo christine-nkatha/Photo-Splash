@@ -40,4 +40,4 @@ class ImageModel(models.Model):
         pass
 
 
-# for controls on django admin
+
