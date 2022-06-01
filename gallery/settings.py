@@ -12,8 +12,17 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+from pickle import TRUE
 import django_heroku
 
+import cloudinary
+
+
+cloudinary.config( 
+  cloud_name = "nkatha-photosplash", 
+  api_key = "456841764713855", 
+  api_secret = "mEgAHvtnbJkT5XEDZPgOcv8yXlY" 
+)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ysy$t0a*www=fzn3km(!893d*r6z=@3#%tl7(6rbm!ki(%k)=='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = TRUE
 
 ALLOWED_HOSTS = ["https://nkatha-gallery.herokuapp.com", "*"]
 CSRF_TRUSTED_ORIGINS = ["https://nkatha-gallery.herokuapp.com"]

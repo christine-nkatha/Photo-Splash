@@ -2,6 +2,9 @@ from django.shortcuts import redirect, render
 from django.http  import HttpResponse
 
 from mygallery.models import ImageModel
+
+
+
 # Create your views here.
 def index(request):
     photos =   ImageModel.objects.all()

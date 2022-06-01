@@ -1,5 +1,5 @@
 from django.db import models
-
+from cloudinary.models import CloudinaryField
 #models
 class LocationModel(models.Model):
     name = models.CharField(max_length=100) 
@@ -19,7 +19,8 @@ class ImageModel(models.Model):
     description = models.CharField(max_length=200)
     location = models.ForeignKey(LocationModel, on_delete=models.CASCADE)
     category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE)
-    file = models.FileField(upload_to='media/')
+    file = CloudinaryField('file')
+
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self) -> str:

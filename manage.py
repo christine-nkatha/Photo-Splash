@@ -26,4 +26,5 @@ if __name__ == '__main__':
 # super user details 
 # name -- christine
 # password --  1234
-# email-- nkathachristine456@gmail.com
+# email-- nkathachristine456@gmail.com 
+#cloudinary password-- Nkatha@456  with above email
